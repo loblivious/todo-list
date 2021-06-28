@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Todo List</title>
+</head>
+
+<body>
+    <div class="container pt-7">
+        <h1 class="en fs-5 text-center ls-3">TODO LIST</h1>
+
+        <div class="bg-white br-10 mt-8 py-1 pe-1 fs-2 d-flex justify-content-between">
+            <input type="text" placeholder="新增待辦事項" class="add-todo ms-4 b-0 w-100 outline-0 fs-2">
+            <button id="btn-add" class="ms-2 b-0 br-10 fs-4 bg-black text-white w-45-h-40 hover-pointer" type="submit">+</button>
+        </div>
+
+        <div class="bg-white br-10">
+            <ul class="tabs d-flex mt-2">
+                <li class="text-center w-100">
+                    <a class="tab-link py-3 d-block nav-link text-gray fs-1 active hover-pointer" id="all-tab" type="button" role="tab" aria-controls="allOnList" aria-selected="true">全部</a>
+                </li>
+                <li class="text-center w-100">
+                    <a class="tab-link py-3 d-block nav-link text-gray fs-1 hover-pointer" id="todos-tab" type="button" role="tab" aria-selected="false">待完成</a>
+                </li>
+                <li class="text-center w-100">
+                    <a class="tab-link py-3 d-block nav-link text-gray fs-1 hover-pointer" id="dones-tab" type="button" role="tab" aria-selected="false">已完成</a>
+                </li>
+            </ul>
+            <div class="tab-content ps-4 pe-3 pt-2 pb-5">
+                <div class="tab-pane" id="allOnList">
+                    <ul class="list">
+                    </ul>
+                    <div class="d-flex justify-content-between w-100 mt-4 w-428">
+                        <span class="todo-counts fs-1"></span>
+                        <input type="button" class="clearAllDones text-gray fs-1 m-0 b-0 p-0 bg-white hover-pointer" value="清除已完成項目">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="all.js"></script>
+</body>
+
+</html>

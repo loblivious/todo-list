@@ -1,0 +1,26 @@
+body {
+    background: linear-gradient(174deg, #ffd370 2%, #ffd370 46%, #ffffff 46%, #ffffff 100%, #e8e8e8 100%) no-repeat;
+    font-family: $font-family-tc;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 500px;
+    color: $black;
+}
+
+.checkbox {
+	-webkit-appearance: none;
+	border: 1px solid $black;
+	height: 20px;
+    width: 20px;
+	border-radius: 5px;
+	display: inline-block;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+::placeholder {
+    font-size: map-get($font-sizes, 2);
+}

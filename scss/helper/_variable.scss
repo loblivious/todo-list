@@ -1,0 +1,98 @@
+$font-family-tc: 'Noto Sans TC', sans-serif;
+$font-family-en: "Baloo Tamma 2", cursive;
+$base-spacer: 8px;
+$black: #333333;
+$gray: #9F9A91;
+$yellow: #FFD370;
+$spacers: (
+    0: 0,
+    1: $base-spacer / 2,        // 4px
+    2: $base-spacer,            // 8px
+    3: $base-spacer * 2,        // 16px
+    4: $base-spacer * 3,        // 24px
+    5: $base-spacer * 4,        // 32px
+    6: $base-spacer * 5,        // 40px
+    7: $base-spacer * 6,        // 48px
+    8: $base-spacer * 7,        // 56px
+    9: $base-spacer * 8,        // 64px
+    10: $base-spacer * 9,       // 72px
+    11: $base-spacer * 10,      // 80px
+    12: $base-spacer * 11,      // 88px
+    13: $base-spacer * 12       // 96px
+);
+$font-sizes: (
+    1: 14px,
+    2: 16px,
+    3: 20px,
+    4: 32px,
+    5: 48px
+);
+$letter-spacings: (
+    1: 0.62px,
+    2: 0.7px,
+    3: 8.75px
+);
+
+@each $key, $value in $letter-spacings {
+    .ls-#{$key} {
+        letter-spacing: $value;
+    }
+}
+
+@each $key, $value in $font-sizes {
+    .fs-#{$key} {
+        font-size: $value;
+    }
+}
+@each $key, $value in $spacers {
+    .m-#{$key} {
+        margin: $value;
+    }
+    .mx-#{$key} {
+        margin-left: $value;
+        margin-right: $value;
+    }
+    .my-#{$key} {
+        margin-top: $value;
+        margin-bottom: $value;
+    }
+    .mt-#{$key} {
+        margin-top: $value;
+    }
+    .mb-#{$key} {
+        margin-bottom: $value;
+    }
+    .ms-#{$key} {
+        margin-left: $value;
+    }
+    .me-#{$key} {
+        margin-right: $value;
+    }
+    .p-#{$key} {
+        padding: $value;
+    }
+    .px-#{$key} {
+        padding-left: $value;
+        padding-right: $value;
+    }
+    .py-#{$key} {
+        padding-top: $value;
+        padding-bottom: $value;
+    }
+    .pt-#{$key} {
+        padding-top: $value;
+    }
+    .pb-#{$key} {
+        padding-bottom: $value;
+    }
+    .ps-#{$key} {
+        padding-left: $value;
+    }
+    .pe-#{$key} {
+        padding-right: $value;
+    }
+    .wh-#{$key} {
+        width: $value;
+        height: $value;
+    }
+}

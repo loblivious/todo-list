@@ -1,0 +1,118 @@
+.en {
+    font-family: $font-family-en;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-none {
+    display: none;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-gray {
+    color: $gray;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-yellow {
+    color: $yellow;
+}
+
+.text-lightgray {
+    color: rgba(51,51,51,0.30);
+}
+
+.bg-white {
+    background: white;
+}
+
+.bg-black {
+    background: $black;
+}
+
+.br-5 {
+    border-radius: 5px;
+}
+
+.br-10 {
+    border-radius: 10px;
+}
+
+.b-0 {
+    border: 0;
+}
+
+.bb-black {
+    border-bottom: 1px solid $black;
+}
+
+.bb-gray {
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.outline-0 {
+    outline: 0;
+}
+
+.active {
+    font-weight: bold;
+    color: $black;
+    border-bottom: 2px solid $black;
+}
+
+.show-x-when-hover {
+    > button {
+        display: none;
+    }
+    &:hover {
+        > button {
+            display: block;
+        }
+    }
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.w-392 {
+    width: 392px;
+}
+
+.w-428 {
+    width: 428px;
+}
+
+.w-45-h-40 {
+    height: 40px;
+    width: 45px;
+}
+
+.wh-20 {
+    height: 20px;
+    width: 20px;
+}
+
+.hover-pointer:hover {
+    cursor: pointer;
+}
